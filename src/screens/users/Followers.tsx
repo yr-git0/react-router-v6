@@ -5,7 +5,6 @@ interface IFollowersContext {
 }
 
 function Followers() {
-  console.log(useOutletContext());
   const { nameOfMyUser } = useOutletContext<IFollowersContext>();
   return <h1>Here are {nameOfMyUser}의 followers</h1>;
 }
